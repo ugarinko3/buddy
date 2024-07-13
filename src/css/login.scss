@@ -103,7 +103,7 @@ body {
   background-color: #fff;
 }
 
-.login .form_item input{
+input{
   color:#4c4c4cd0;
   font-weight: 500;
   font-size: 18px;
@@ -112,10 +112,10 @@ body {
   outline: none;
   width: 98%;
 }
-.login input::placeholder {
+input::placeholder {
   color: #3fac9099;
 }
-.login .form_item input::placeholder{
+input::placeholder{
   font-size: 18px;
 }
 .login .submit {
