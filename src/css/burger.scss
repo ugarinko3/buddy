@@ -15,17 +15,30 @@ input[type="text"]::-webkit-outer-spin-button {
     align-items: center;
     height: 80px;
     background-color: #1f2632;
+    position: relative;
 }
 .BurgerContainer .NameApp {
     display: flex;
     align-items: center;
+    width: 100%;
+    
+    
+}
+.BurgerContainer .NameApp .svgLogo {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.BurgerContainer .NameApp .svgLogo svg{
+    height: 100%;
 }
 .searchParticipant {
     position: relative;
 }
 
 .searchParticipant::after {
-    content: '\1F50D'; /* Юникод символ значка поиска */
+    content: '\1F50D';
     position: absolute;
     top: 50%;
     right: 10px;
@@ -38,21 +51,38 @@ input[type="text"]::-webkit-outer-spin-button {
 .BurgerContainer .NameApp h1{
     font-family: 'Post No Bills Jaffna ExtraBold'; /* Добавлены кавычки вокруг названия шрифта */
     font-size: 36px;
+    
     background-image: linear-gradient(to right, #76b0cb, #75F5C5);
     -webkit-background-clip: text; /* Для поддержки вебкит-браузеров */
     background-clip: text;
     color: transparent;
-    width: 100px;
+    width: 600px;
     padding: 0 20px;
     text-align: center;
 }
 .BurgerContainer .NameApp .searchParticipant {
     display: flex;
     align-content: center;
-    width: 100%;
+    max-width: 250px;
     margin: 10px 0;
     border-radius: 15px;
     padding: 10px 20px;
     background-color: #fff;
 }
 
+@media screen and (max-width: 600px) {
+    .BurgerContainer {
+        height: 60px;
+    }
+    .BurgerContainer .NameApp .searchParticipant {
+        display: none;
+    }
+    .BurgerContainer .NameApp .svgLogo {
+        text-align: center;
+    }
+    .BurgerContainer .NameApp .svgLogo svg{
+        margin-left: 0;
+    }
+    
+    
+}
