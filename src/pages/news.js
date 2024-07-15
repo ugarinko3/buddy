@@ -1,6 +1,5 @@
 import image from '../logo192.png'
 import image_news from '../image.png'
-import image_news_1 from '../photo1720697613.jpeg'
 
 
 function BorderNews(){
