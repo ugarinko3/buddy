@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/burger.scss">
+    <link rel="stylesheet" href="../css/burger.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,40 +21,53 @@
                     </defs>
                 </svg>
             </a>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.51831 2.00431C4.92058 2.00431 2.00431 4.92058 2.00431 8.51831C2.00431 12.116 4.92058 15.0323 8.51831 15.0323C10.3172 15.0323 11.9447 14.3048 13.1242 13.1242C14.3048 11.9447 15.0323 10.3172 15.0323 8.51831C15.0323 4.92058 12.116 2.00431 8.51831 2.00431ZM0 8.51831C0 3.8142 3.8142 0 8.51831 0C13.2224 0 17.0366 3.8142 17.0366 8.51831C17.0366 10.5086 16.3532 12.3415 15.2087 13.7917L20 18.583L18.583 20L13.7917 15.2087C12.3415 16.3532 10.5086 17.0366 8.51831 17.0366C3.8142 17.0366 0 13.2224 0 8.51831Z" fill="url(#paint0_linear_85_1513)"/>
-                <defs>
-                <linearGradient id="paint0_linear_85_1513" x1="10" y1="0" x2="10" y2="20" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#76D7C9"/>
-                <stop offset="1" stop-color="#75F5C5"/>
-                </linearGradient>
-                </defs>
-            </svg>
-            <div class='header-burger'>
-                <span></span>
+            <div class="search">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.51831 2.00431C4.92058 2.00431 2.00431 4.92058 2.00431 8.51831C2.00431 12.116 4.92058 15.0323 8.51831 15.0323C10.3172 15.0323 11.9447 14.3048 13.1242 13.1242C14.3048 11.9447 15.0323 10.3172 15.0323 8.51831C15.0323 4.92058 12.116 2.00431 8.51831 2.00431ZM0 8.51831C0 3.8142 3.8142 0 8.51831 0C13.2224 0 17.0366 3.8142 17.0366 8.51831C17.0366 10.5086 16.3532 12.3415 15.2087 13.7917L20 18.583L18.583 20L13.7917 15.2087C12.3415 16.3532 10.5086 17.0366 8.51831 17.0366C3.8142 17.0366 0 13.2224 0 8.51831Z" fill="url(#paint0_linear_85_1513)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_85_1513" x1="10" y1="0" x2="10" y2="20" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#76D7C9"/>
+                    <stop offset="1" stop-color="#75F5C5"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
             </div>
+            <button class="button-header-burger">
+                <div class='header-burger'>
+                    <span></span>
+                </div>
+            </button>
             <nav class='header-menu'>
-                <ul class="header-list">
-                    <li>
-                        <a href="" class="header-link _active-link">News</a>
-                    </li>
-                    <li>
-                        <a href="" class="header-link">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="" class="header-link">Profile</a>
-                    </li>
-                    <li>
-                        <a href="" class="header-link">Tournament</a>
-                    </li>
-                </ul>
-                
+                <div class="header-menu-container">
+                    <ul class="header-list">
+                        <li>
+                            <a href="" class="header-link _active-link">News</a>
+                        </li>
+                        <li>
+                            <a href="" class="header-link">Calendar</a>
+                        </li>
+                        <li>
+                            <a href="" class="header-link">Profile</a>
+                        </li>
+                        <li>
+                            <a href="" class="header-link">Tournament</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+            <script>
+                $(document).ready(function() {
+                    $('.header-burger').click(function(event){
+                        $('.header-burger, .header-menu-container, .header-menu').toggleClass('active');
+                    });
+                });
+            </script>
             <!-- <input class='searchParticipant' type="text" placeholder='Request'></input> -->
         </div>
     </header>
     <div class="text">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, optio mollitia autem fugiat itaque assumenda saepe dolor reiciendis quae? Nobis repudiandae accusantium ut possimus magni voluptates impedit aliquam, vel Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam nesciunt perspiciatis nemo dolor consequatur ipsam odit beatae maxime, labore adipisci illum architecto magnam explicabo aliquam excepturi tempore iure sed saepe neque odio laboriosam? Officia maiores vitae, harum quisquam doloribus assumenda velit eaque est perspiciatis quae cupiditate, facilis necessitatibus molestias doloremque? Eos ex, fugiat cum ut quam ab nesciunt molestias natus rem odio et, inventore exercitationem explicabo impedit omnis aliquid commodi? At deleniti voluptatum molestiae laudantium dignissimos? Voluptatibus blanditiis nisi ex dignissimos doloremque explicabo? A voluptatem dignissimos officiis, architecto nisi molestias! Aspernatur officiis porro sed, atque magni nihil voluptatem iure blanditiis. Ipsum cupiditate mollitia voluptatum sequi asperiores fugit aliquam maxime suscipit eum, tempore ea? Perspiciatis cupiditate assumenda autem cum fugiat totam exercitationem reprehenderit. Corporis maxime delectus et ipsam quas. Officia commodi assumenda illum alias possimus tempora exercitationem optio voluptate odit. Quia soluta vero suscipit, consequuntur a culpa consequatur perspiciatis perferendis atque ratione explicabo quae rem sed, quidem vel error tenetur provident ex quas aperiam officiis nam itaque neque. Fugit quam consectetur recusandae! Quasi eius nesciunt laudantium omnis distinctio ullam porro vero, autem possimus iure. Rerum dignissimos exercitationem iusto. Voluptatem sed minima doloribus perspiciatis veniam exercitationem unde perferendis veritatis ex, odit eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nobis, deleniti autem magnam quibusdam voluptate, perferendis laudantium laboriosam enim ipsa omnis exercitationem nisi sint libero eum nesciunt. Vitae, harum at!</p>
     </div>
+    
 </body>
 </html>
