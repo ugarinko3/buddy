@@ -25,7 +25,7 @@ function Login() {
         <div className='login-container'>
           <div className='login'>
             <h2>Welcome to the team buddy</h2>
-            <p1>Please enter your login and password that you received earlier</p1>
+            <p>Please enter your login and password that you received earlier</p>
             <form className='form'>
               <div className="form_item">
                 <input id="formLogin" type="text" name="login" className="form_input" placeholder='Login'></input>
@@ -38,7 +38,7 @@ function Login() {
               </div>
               <div className='submit'>
                 <button id='login-submit' type="submit">
-                  <p2>Log in</p2>
+                  <p>Log in</p>
                   <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
