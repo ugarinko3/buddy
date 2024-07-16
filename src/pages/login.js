@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import './css/login.scss';
+import '../css/login.scss';
 
 
 
@@ -14,7 +14,7 @@ function Login() {
 
   return (
     <div className="entrance">
-      <header className="entrance-header">
+      <div className="entrance-header">
         <div className='text-login'>
           <div className='text'>
             <h1>Team Buddy</h1>
@@ -48,7 +48,7 @@ function Login() {
             </form>
           </div>
         </div>
-      </header>
+      </div>
     </div>
   );
 }

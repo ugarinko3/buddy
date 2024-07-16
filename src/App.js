@@ -8,7 +8,7 @@ import {
   } from "react-router-dom";
   
 import Burger from './pages/header_burger';
-import Login from './login';
+import Login from './pages/login';
 import Main from './pages/main';
 import Calendar from './pages/calendar';
 
@@ -19,6 +19,8 @@ function App(){
         <Router>
             <Routes>
                 <Route path="/" element={<Login />}/>
+                <Route path="/main" element={<Main />}/>
+                <Route path="/calendar" element={<Calendar />}/>
                 
             </Routes>
         </Router>
