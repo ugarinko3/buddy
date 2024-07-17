@@ -1,11 +1,10 @@
 import '../css/burger.scss';
+import React, {useState} from 'react';
 
 function Burger(){
-
+    const [activeMenu, setActiveMenu] = useState('');
     function clickBurger(){
-        document.getElementById('button-header').classNameList.toggle("active");
-        document.getElementById('header-menu-function').classNameList.toggle("active");
-        document.getElementById('menu').classNameList.toggle("active");
+        activeMenu == '' ? setActiveMenu('active') : setActiveMenu('');
     }
     return(
         <header className='BurgerContainer'>
@@ -33,12 +32,12 @@ function Burger(){
                 </svg>
             </div>
             <button onClick={clickBurger} className="button-header-burger">
-                <div className='header-burger' id='button-header'>
+                <div className={'header-burger ' + activeMenu} id='button-header'>
                     <span></span>
                 </div>
             </button>
-            <nav className='header-menu' id="menu">
-                <div className="header-menu-container" id='header-menu-function'>
+            <nav className={'header-menu ' + activeMenu} id="menu">
+                <div className={"header-menu-container " + activeMenu} id='header-menu-function'>
                     <ul className="header-list">
                         <li>
                             <a href="" className="header-link _active-link">News</a>

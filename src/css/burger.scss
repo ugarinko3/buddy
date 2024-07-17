@@ -23,9 +23,6 @@ input[type="text"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0; /* Убираем внутренние и внешние кнопки */
 }
-body {
-    margin-top: 100px;
-}
 
 header {
     position:fixed;
@@ -240,15 +237,22 @@ header:before{
         justify-content: flex-end;
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
+        left: 100%;
+        width: 0;
         height: 100%;
+        // display: none;
         z-index: 53;
-        transition: all 0.3s ease 0s;
+        transition: background-color 0.3s ease;
 
     }
     .header-menu.active {
         background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        left: 0;
+        // display: flex;
+        transition: background-color 0.3s ease;
+        // z-index: 53;
     }
     .header-burger.active:before {
         transform: rotate(45deg);

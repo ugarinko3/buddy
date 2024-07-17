@@ -6,18 +6,25 @@
 }
 p {
     font-family: 'Roboto-light';
+    color: #fff;
+}
+a {
+    text-decoration: none;
 }
 .calendar {
+    margin-top: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
     // background-color: #2F3849;
+    z-index: 54;
 }
 .calendar-container {
     max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 49;
 }
 
 .calendar-container .calendar-day {
@@ -30,12 +37,23 @@ p {
     margin-top: 20px;
     display: flex; /* Добавляем flex для внутренних элементов */
     flex-direction: column;
+    transition: all 0.5s ease 0s;
 }
 .calendar-container .calendar-day.active {
     border: 2px solid #75F5C5;
 }
 .calendar-container .calendar-day.progress {
     border: 2px solid #1B6CE0;
+}
+.calendar-container .calendar-day:hover {
+    scale: 1.07;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+.calendar-container .calendar-day.no-active:hover {
+    scale: 1;
+    cursor:default;
+    
 }
 .calendar-container .calendar-day.no-active {
     border: 0;
