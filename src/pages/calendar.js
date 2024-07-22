@@ -37,7 +37,13 @@ function Calendar () {
                     "activity": "no-active"
                 },
                 {
-                    "day": ['5', 'th'],
+                    "day": ['6', 'th'],
+                    "task": "",
+                    "data_time": "12 December 2024",
+                    "activity": "no-active"
+                },
+                {
+                    "day": ['7', 'th'],
                     "task": "",
                     "data_time": "12 December 2024",
                     "activity": "no-active"

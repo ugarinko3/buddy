@@ -11,6 +11,7 @@ import Burger from './pages/header_burger';
 import Login from './pages/login';
 import Main from './pages/main';
 import Calendar from './pages/calendar';
+import Calendar_day from './pages/calendar-day';
 
 
 function App(){
@@ -21,7 +22,7 @@ function App(){
                 <Route path="/" element={<Login />}/>
                 <Route path="/main" element={<Main />}/>
                 <Route path="/calendar" element={<Calendar />}/>
-                
+                <Route path="/calendar-day" element={<Calendar_day />}/>
             </Routes>
         </Router>
     )
